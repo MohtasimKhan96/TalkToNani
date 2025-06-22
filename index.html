@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talk to Nani - AI Life Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="login-section">
+    <h2>Login to Talk to Nani</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+</div>
+
+<div id="chat-section" style="display:none;">
+    <h1>Welcome to Talk to Nani</h1>
+    <p id="welcomeMessage"></p>
+
+    <div id="chatbox">
+        <div id="chatlog"></div>
+        <input type="text" id="userInput" placeholder="Ask Nanu for advice...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <p id="trialNotice"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
